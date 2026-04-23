@@ -31,7 +31,11 @@ public class BrowserHistorySimulator {
 
     }
     public static void visitPage(Stack<String> pageTrail, String url) {
-
+        pageTrail.push(url);
+        System.out.println("Visited: " + url);
+        showCurrentPage(pageTrail);
+        System.out.println("History: " + pageTrail);
+        System.out.println();
     }
     public static void goBack(Stack<String> pageTrail) {
 
