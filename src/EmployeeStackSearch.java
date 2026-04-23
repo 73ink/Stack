@@ -46,5 +46,13 @@ public class EmployeeStackSearch {
             System.out.println(action);
             System.out.println();
         }
+
+        System.out.println("Iterating with Iterator:");
+        Iterator<String> stepByStep = workSearch.iterator();
+        while (stepByStep.hasNext()) {
+            System.out.println(stepByStep.next());
+        }
+        System.out.println();
+
     }
 }
