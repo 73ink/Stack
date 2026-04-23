@@ -8,5 +8,8 @@ public class EmployeeStackDemo {
         actionLog.push("Maha approved the invoice");
         actionLog.push("Hamed checked stock items");
         actionLog.push("Noor generated the daily report");
+
+        System.out.println("Employee action stack:");
+        System.out.println(actionLog);
     }
 }
