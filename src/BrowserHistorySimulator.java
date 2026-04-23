@@ -20,6 +20,10 @@ public class BrowserHistorySimulator {
         visitPage(pageTrail, "https://www.reddit.com");
         visitPage(pageTrail, "https://www.medium.com");
 
+        System.out.println("Final browsing history:");
+        System.out.println(pageTrail);
+        System.out.println();
+
     }
     public static void visitPage(Stack<String> pageTrail, String url) {
 
