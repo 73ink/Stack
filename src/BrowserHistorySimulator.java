@@ -38,7 +38,15 @@ public class BrowserHistorySimulator {
         System.out.println();
     }
     public static void goBack(Stack<String> pageTrail) {
-
+        if (!pageTrail.isEmpty()) {
+            String removedPage = pageTrail.pop();
+            System.out.println("Went back from: " + removedPage);
+        } else {
+            System.out.println("No pages in history to go back.");
+        }
+        showCurrentPage(pageTrail);
+        System.out.println("History: " + pageTrail);
+        System.out.println();
     }
     public static void showCurrentPage(Stack<String> pageTrail){
 
