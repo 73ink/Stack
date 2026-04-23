@@ -49,6 +49,10 @@ public class BrowserHistorySimulator {
         System.out.println();
     }
     public static void showCurrentPage(Stack<String> pageTrail){
-
+        if (!pageTrail.isEmpty()) {
+            System.out.println("Current page: " + pageTrail.peek());
+        } else {
+            System.out.println("Current page: no page opened");
+        }
     }
 }
