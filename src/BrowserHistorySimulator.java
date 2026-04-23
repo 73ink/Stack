@@ -13,11 +13,18 @@ public class BrowserHistorySimulator {
         goBack(pageTrail);
         goBack(pageTrail);
 
+        showCurrentPage(pageTrail);
+        System.out.println("Is browser history empty? " + pageTrail.isEmpty());
+        System.out.println();
+
     }
     public static void visitPage(Stack<String> pageTrail, String url) {
 
     }
     public static void goBack(Stack<String> pageTrail) {
+
+    }
+    public static void showCurrentPage(Stack<String> pageTrail){
 
     }
 }
