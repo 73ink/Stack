@@ -11,5 +11,12 @@ public class EmployeeStackDemo {
 
         System.out.println("Employee action stack:");
         System.out.println(actionLog);
+
+
+        actionLog.push("Salim logged out from the system");
+
+
+        System.out.println("Updated employee action stack:");
+        System.out.println(actionLog);
     }
 }
