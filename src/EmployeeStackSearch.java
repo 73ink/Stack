@@ -20,5 +20,12 @@ public class EmployeeStackSearch {
             System.out.println("Position " + pos + ": " + workSearch.get(i));
         }
         System.out.println();
+        int firstSearch = workSearch.search("Salim approved leave request");
+        int secondSearch = workSearch.search("Ahmed logged into the HR portal");
+
+        System.out.println("Search results:");
+        System.out.println("\"Salim approved leave request\" found at position from top: " + firstSearch);
+        System.out.println("\"Ahmed logged into the HR portal\" found at position from top: " + secondSearch);
+        System.out.println();
     }
 }
