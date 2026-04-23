@@ -17,6 +17,9 @@ public class BrowserHistorySimulator {
         System.out.println("Is browser history empty? " + pageTrail.isEmpty());
         System.out.println();
 
+        visitPage(pageTrail, "https://www.reddit.com");
+        visitPage(pageTrail, "https://www.medium.com");
+
     }
     public static void visitPage(Stack<String> pageTrail, String url) {
 
