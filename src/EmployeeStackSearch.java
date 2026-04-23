@@ -34,5 +34,11 @@ public class EmployeeStackSearch {
         System.out.println("Does stack contain \"Khalid removed old file\"? "
                 + workSearch.contains("Khalid removed old file"));
         System.out.println();
+
+        System.out.println("Iterating with normal for loop (top to bottom):");
+        for (int i = workSearch.size() - 1; i >= 0; i--) {
+            System.out.println(workSearch.get(i));
+        }
+        System.out.println();
     }
 }
