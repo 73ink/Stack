@@ -10,8 +10,14 @@ public class BrowserHistorySimulator {
         visitPage(pageTrail, "https://www.translate.google.com");
         visitPage(pageTrail, "https://www.typingtest.com");
 
+        goBack(pageTrail);
+        goBack(pageTrail);
+
     }
     public static void visitPage(Stack<String> pageTrail, String url) {
+
+    }
+    public static void goBack(Stack<String> pageTrail) {
 
     }
 }
