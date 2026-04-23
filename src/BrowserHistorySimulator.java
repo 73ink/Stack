@@ -24,6 +24,11 @@ public class BrowserHistorySimulator {
         System.out.println(pageTrail);
         System.out.println();
 
+        System.out.println("Clearing history now...");
+        pageTrail.clear();
+        System.out.println("History after clear: " + pageTrail);
+        System.out.println("Is browser history empty now? " + pageTrail.isEmpty());
+
     }
     public static void visitPage(Stack<String> pageTrail, String url) {
 
