@@ -27,5 +27,12 @@ public class EmployeeStackSearch {
         System.out.println("\"Salim approved leave request\" found at position from top: " + firstSearch);
         System.out.println("\"Ahmed logged into the HR portal\" found at position from top: " + secondSearch);
         System.out.println();
+
+        System.out.println("Contains check:");
+        System.out.println("Does stack contain \"Huda updated salary details\"? "
+                + workSearch.contains("Huda updated salary details"));
+        System.out.println("Does stack contain \"Khalid removed old file\"? "
+                + workSearch.contains("Khalid removed old file"));
+        System.out.println();
     }
 }
