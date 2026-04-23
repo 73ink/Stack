@@ -54,5 +54,10 @@ public class EmployeeStackSearch {
         }
         System.out.println();
 
+        System.out.println("Actions with index positions:");
+        for (int i = 0; i < workSearch.size(); i++) {
+            System.out.println("Index " + i + ": " + workSearch.get(i));
+        }
+
     }
 }
