@@ -40,5 +40,11 @@ public class EmployeeStackSearch {
             System.out.println(workSearch.get(i));
         }
         System.out.println();
+
+        System.out.println("Iterating with for-each loop (bottom to top):");
+        for (String action : workSearch) {
+            System.out.println(action);
+            System.out.println();
+        }
     }
 }
