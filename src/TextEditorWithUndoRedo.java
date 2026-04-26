@@ -18,7 +18,9 @@ public class TextEditorWithUndoRedo {
 
     }
     public static void type(String newText){
-
+        undoStack.push(text);
+        text = text + newText;
+        redoStack.clear();
     }
     public static void undo() {
 
