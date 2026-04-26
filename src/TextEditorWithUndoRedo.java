@@ -14,6 +14,7 @@ public class TextEditorWithUndoRedo {
 
         redo();
 
+        type(" Aaisha");
 
     }
     public static void type(String newText){
