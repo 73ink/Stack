@@ -25,5 +25,8 @@ public class ParenthesesValidator {
         for (int i = 0; i < text.length(); i++) {
 
             char letter = text.charAt(i);
+        if (letter == '(' || letter == '[' || letter == '{') {
+                myStack.push(letter);
+            }
     }
 }
