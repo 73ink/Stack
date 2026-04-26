@@ -34,6 +34,15 @@ public class StringReversalAndPalindrome {
 
     }
     public static boolean isPalindrome(String word){
-        return y;
+        String smallWord = word.toLowerCase(); // convert the word to lowercase if it has uppercase letters, so that it would be easier to match words
+
+        String reversed = reverseString(smallWord);
+
+        if (smallWord.equals(reversed)) {
+            return true;// if the two word matches even with the reverse, then the program will give us true.
+        } else {
+            return false; // if not equal, then the program will give us false.
+        }
+
     }
 }
