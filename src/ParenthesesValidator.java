@@ -8,6 +8,20 @@ public class ParenthesesValidator {
          ")))",
           "",
         };
+        for (String text : sampleLines) {
+            System.out.println("Expression: " + text);
+
+            if (isBalanced(text)) {
+                System.out.println("Result: Balanced");
+            } else {
+                System.out.println("Result: Not Balanced");
+            }
+
+            System.out.println("----------------------");
+        }
+    }
+    public static boolean isBalanced(String text) {
+
 
     }
 }
