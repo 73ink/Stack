@@ -28,5 +28,26 @@ public class ParenthesesValidator {
         if (letter == '(' || letter == '[' || letter == '{') {
                 myStack.push(letter);
             }
+        else if (letter == ')' || letter == ']' || letter == '}') {
+
+            if (myStack.isEmpty()) {
+                return false;
+            }
+
+            char top = myStack.pop();
+
+            if (letter == ')' && top != '(') {
+                return false;
+            }
+
+            if (letter == ']' && top != '[') {
+                return false;
+            }
+
+            if (letter == '}' && top != '{') {
+                return false;
+            }
+        }
+        }
     }
 }
