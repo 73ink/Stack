@@ -49,5 +49,6 @@ public class ParenthesesValidator {
             }
         }
         }
+        return myStack.isEmpty();
     }
 }
