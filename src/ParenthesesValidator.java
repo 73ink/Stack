@@ -21,7 +21,7 @@ public class ParenthesesValidator {
         }
     }
     public static boolean isBalanced(String text) {
-
+        Stack<Character> myStack = new Stack<>();
 
     }
 }
