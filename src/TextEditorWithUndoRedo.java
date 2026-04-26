@@ -12,12 +12,17 @@ public class TextEditorWithUndoRedo {
         undo();
         undo();
 
+        redo();
+
 
     }
     public static void type(String newText){
 
     }
     public static void undo() {
+
+    }
+    public static void redo() {
 
     }
 }
