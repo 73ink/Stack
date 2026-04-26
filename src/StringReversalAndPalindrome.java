@@ -3,7 +3,7 @@ import java.util.Stack;
 public class StringReversalAndPalindrome {
     public static void main (String[] args){
         // Add simple strings for testing
-        String[] words = {"app", "hallah","mom", "level", "RaceCar", "", "a"};
+        String[] words = {"app", "Switzerland","MoM", "Level", "RaceCar", "", "a"};
             // output and system prints
         for (String word : words) {
             System.out.println("Original word: " + word);
