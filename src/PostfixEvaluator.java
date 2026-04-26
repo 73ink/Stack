@@ -12,6 +12,8 @@ public class PostfixEvaluator {
         }
     }
     public static String evaluatePostfix(String expression){
+        Stack<Integer> numbers = new Stack<>();
+            return () ;
 
     }
 }
