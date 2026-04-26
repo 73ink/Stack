@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class DecimalToBinaryConverter {
     public static void main(String[] args) {
-        int[] nums = {0, 1, 5, 10, 15, 25}; // 6 different decimal numbers to convert to binary
+        int[] nums = {0, 1, 5, 10, 15, 45}; // 6 different decimal numbers to convert to binary
         // output prints based on the case
         for (int num : nums) {
             System.out.println("Decimal number: " + num);
@@ -10,7 +10,7 @@ public class DecimalToBinaryConverter {
             System.out.println("--------------------");
         }
     }
-
+    // please note that I've used this site as a learning material for decimal & binary: https://beginnersbook.com/2014/07/java-program-to-convert-decimal-to-binary/
     public static String decimalToBinary(int num) {
         // if number is 0, binary is also 0
         if (num == 0) {
