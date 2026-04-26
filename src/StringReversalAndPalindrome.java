@@ -19,7 +19,18 @@ public class StringReversalAndPalindrome {
 
     }
     public static String reverseString(String word){
-        return x;
+        Stack<Character> letters = new Stack<>();
+
+        for (int i = 0; i < word.length(); i++) {
+            letters.push(word.charAt(i));
+        }
+
+        String reversed = "";
+
+        while (!letters.isEmpty()) {
+            reversed = reversed + letters.pop();
+        }
+        return reversed;
 
     }
     public static boolean isPalindrome(String word){
