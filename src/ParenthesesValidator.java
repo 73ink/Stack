@@ -22,6 +22,8 @@ public class ParenthesesValidator {
     }
     public static boolean isBalanced(String text) {
         Stack<Character> myStack = new Stack<>();
+        for (int i = 0; i < text.length(); i++) {
 
+            char letter = text.charAt(i);
     }
 }
