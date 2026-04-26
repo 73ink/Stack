@@ -9,11 +9,15 @@ public class TextEditorWithUndoRedo {
         type(" World");
         type(" Java");
 
+        undo();
+        undo();
 
 
     }
     public static void type(String newText){
 
     }
-    
+    public static void undo() {
+
+    }
 }
