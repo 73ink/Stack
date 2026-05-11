@@ -46,7 +46,6 @@ public class HtmlTagValidator {
             }
         }
         return  tagStack.isEmpty();
-
     }
 
 }
