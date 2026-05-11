@@ -4,10 +4,17 @@ public class TextEditorWithUndoRedo {
     static Stack<String> undoStack = new Stack<>();
     static Stack<String> redoStack = new Stack<>();
     static String text = "";
-    public static void main (String[] args){
+
+    public static void main(String[] args) {
+        // simulate 8 different user actions (typing, undo, redo)
         type("Hello");
-        type(" World");
-        type(" Java");
+        type(" I'm");
+        type(" Aaisha");
+        type(" coding-champ");
+        type(" Stack");
+        type(" Practice");
+        type(" Task 9");
+
 
         undo();
         undo();
@@ -15,17 +22,61 @@ public class TextEditorWithUndoRedo {
         redo();
 
         type(" Aaisha");
+        type("Java");
+
+        undo();
+        undo();
+        undo();
+        redo();
+        redo();
+        undo();
+        undo();
+        undo();
 
     }
-    public static void type(String newText){
+
+    public static void type(String newText) {
         undoStack.push(text);
+        limitUndoHistory();
         text = text + newText;
         redoStack.clear();
+
+        System.out.println("Typed: " + newText);
+        display();
     }
-    public static void undo() {
+    public static void limitUndoHistory(){
 
     }
+
+    public static void undo() {
+        if (undoStack.isEmpty()) {
+            System.out.println("Nothing to undo");
+        } else {
+            redoStack.push(text);
+            text = undoStack.pop();
+            System.out.println("Undo done");
+        }
+
+        display();
+    }
+
     public static void redo() {
+        if (redoStack.isEmpty()) {
+            System.out.println("Nothing to redo");
+        } else {
+            undoStack.push(text);
+            text = redoStack.pop();
+            System.out.println("Redo done");
+        }
+
+        display();
+    }
+
+    public static void display() {
+        System.out.println("Current text: " + text);
+        System.out.println("Undo stack: " + undoStack);
+        System.out.println("Redo stack: " + redoStack);
+        System.out.println("--------------------");
 
     }
 }
