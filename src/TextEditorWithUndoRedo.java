@@ -87,7 +87,7 @@ public class TextEditorWithUndoRedo {
         System.out.println("Current text: " + text);
         System.out.println("Undo stack: " + undoStack);
         System.out.println("Redo stack: " + redoStack);
-        System.out.println("--------------------");
+        System.out.println("-------------------");
 
     }
 }
