@@ -19,5 +19,8 @@ public class HtmlTagValidator {
         }
 
     }
+    public  static boolean checkTags(String html){
+
+    }
 
 }
