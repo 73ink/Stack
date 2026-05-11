@@ -21,6 +21,8 @@ public class HtmlTagValidator {
     }
     public  static boolean checkTags(String html){
 
+        Stack<String> tagStack = new Stack<>();
+
     }
 
 }
