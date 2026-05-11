@@ -52,6 +52,10 @@ public class TextEditorWithUndoRedo {
                 tempStack.push(undoStack.pop());
             }
             tempStack.pop();
+
+            while (!tempStack.isEmpty()){
+                undoStack.push(tempStack.pop());
+            }
         }
     }
 
