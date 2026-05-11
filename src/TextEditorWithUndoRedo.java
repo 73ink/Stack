@@ -46,6 +46,12 @@ public class TextEditorWithUndoRedo {
     }
     public static void limitUndoHistory(){
 
+        if (undoStack.size() > 10){
+            Stack<String> tempStack = new Stack<>();
+            while (!undoStack.isEmpty()){
+                tempStack.push(undoStack.pop());
+            }
+        }
     }
 
     public static void undo() {
