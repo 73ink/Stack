@@ -23,6 +23,30 @@ public class HtmlTagValidator {
 
         Stack<String> tagStack = new Stack<>();
 
+        for (int i = 0; i < html.length(); i++){
+            if (html.charAt(i) =='<'){
+                int end = html.indexOf('>', i);
+                String tag = html.substring(i+1, end);
+
+                if (!tag.startsWith("/")){
+                    tagStack.push(tag);
+                } else {
+                    String closingTag = tag.substring(1);
+
+                    if(tagStack.isEmpty()){
+                        return false;
+                    }
+                    String openingTag = tagStack.pop();
+                    if (!openingTag.equals(closingTag)){
+                        return  false;
+                    }
+                }
+                i = end;
+
+            }
+        }
+        return  tagStack.isEmpty();
+
     }
 
 }
