@@ -89,7 +89,13 @@ public class TowerOfHanoiSolver {
 
     }
     public static Stack<Integer> getPeg(char pegName){
-        return pegA;
+        if (pegName == 'A') {
+            return pegA;
+        } else if (pegName == 'B') {
+            return pegB;
+        } else {
+            return pegC;
+        }
     }
 
 }
