@@ -10,8 +10,8 @@ public class TowerOfHanoiSolver {
 
     public static void main (String[] args){
         runHanoi(3);
-        runHanoi(4);
-        runHanoi(5);
+        runHanoi(2);
+        runHanoi(1);
     }
 
     public static void runHanoi(int numDisks){
