@@ -64,8 +64,22 @@ public class TowerOfHanoiSolver {
         }
     }
     public static boolean isValidMove(char fromPeg, char toPeg) {
+        Stack<Integer> fromStack = getPeg(fromPeg);
+        Stack<Integer> toStack = getPeg(toPeg);
 
-    return false;
+        if (fromStack.isEmpty()) {
+            return false;
+        }
+
+        if (toStack.isEmpty()) {
+            return true;
+        }
+
+        if (fromStack.peek() < toStack.peek()) {
+            return true;
+        } else {
+            return false;
+        }
     }
     public static void displayPegs() {
 
