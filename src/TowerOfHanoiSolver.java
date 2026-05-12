@@ -37,7 +37,13 @@ public class TowerOfHanoiSolver {
 
     }
     public static void solveHanoi(int n, char from, char to, char aux){
-
+        if (n == 1) {
+            moveDisk(from, to);
+        } else {
+            solveHanoi(n - 1, from, aux, to);
+            moveDisk(from, to);
+            solveHanoi(n - 1, aux, to, from);
+        }
     }
     public static void moveDisk(char fromPeg, char toPeg) {
 
