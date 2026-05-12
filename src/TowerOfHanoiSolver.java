@@ -46,7 +46,22 @@ public class TowerOfHanoiSolver {
         }
     }
     public static void moveDisk(char fromPeg, char toPeg) {
+        if (isValidMove(fromPeg, toPeg)) {
 
+            Stack<Integer> fromStack = getPeg(fromPeg);
+            Stack<Integer> toStack = getPeg(toPeg);
+
+            int disk = fromStack.pop();
+            toStack.push(disk);
+
+            moves++;
+
+            System.out.println("Move " + moves + ": Disk " + disk + " from " + fromPeg + " to " + toPeg);
+            displayPegs();
+
+        } else {
+            System.out.println("Invalid move from " + fromPeg + " to " + toPeg);
+        }
     }
     public static boolean isValidMove(char fromPeg, char toPeg) {
 
@@ -54,6 +69,9 @@ public class TowerOfHanoiSolver {
     }
     public static void displayPegs() {
 
+    }
+    public static Stack<Integer> getPeg(char pegName){
+        return pegA;
     }
 
 }
