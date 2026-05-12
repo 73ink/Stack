@@ -82,6 +82,10 @@ public class TowerOfHanoiSolver {
         }
     }
     public static void displayPegs() {
+        System.out.println("Peg A: " + pegA);
+        System.out.println("Peg B: " + pegB);
+        System.out.println("Peg C: " + pegC);
+        System.out.println("---------------------------");
 
     }
     public static Stack<Integer> getPeg(char pegName){
