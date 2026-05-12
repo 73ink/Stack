@@ -9,7 +9,9 @@ public class TowerOfHanoiSolver {
     static int moves = 0;
 
     public static void main (String[] args){
-
+        runHanoi(3);
+        runHanoi(4);
+        runHanoi(5);
     }
 
     public static void runHanoi(int numDisks){
@@ -85,7 +87,7 @@ public class TowerOfHanoiSolver {
         System.out.println("Peg A: " + pegA);
         System.out.println("Peg B: " + pegB);
         System.out.println("Peg C: " + pegC);
-        System.out.println("---------------------------");
+        System.out.println("------------------");
 
     }
     public static Stack<Integer> getPeg(char pegName){
