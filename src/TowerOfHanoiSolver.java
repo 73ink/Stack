@@ -13,6 +13,21 @@ public class TowerOfHanoiSolver {
     }
 
     public static void runHanoi(int numDisks){
+        pegA.clear();
+        pegB.clear();
+        pegC.clear();
+        moves =  0;
+
+        initializePegs(numDisks);
+
+        System.out.println("Starting Tower of Hanoi with " + numDisks + " disks");
+        displayPegs();
+
+        solveHanoi(numDisks, 'A', 'C', 'B');
+
+        System.out.println("Total moves: " + moves);
+        System.out.println("Minimum moves should be: " + ((int)Math.pow(2, numDisks) - 1));
+        System.out.println("=================================");
 
     }
     public static void initializePegs(int numDisks){
