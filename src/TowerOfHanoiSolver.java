@@ -27,10 +27,13 @@ public class TowerOfHanoiSolver {
 
         System.out.println("Total moves: " + moves);
         System.out.println("Minimum moves should be: " + ((int)Math.pow(2, numDisks) - 1));
-        System.out.println("=================================");
+        System.out.println("=================");
 
     }
     public static void initializePegs(int numDisks){
+        for (int i = numDisks; i >= 1; i--) {
+            pegA.push(i);
+        }
 
     }
     public static void solveHanoi(int n, char from, char to, char aux){
